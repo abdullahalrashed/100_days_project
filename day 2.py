@@ -32,6 +32,15 @@ is_winning = True
 
 print(f"your score is = {score},\nyour height is {height},\nYour are winnign is {is_winning}")
 
+# tip calculator
+
+print("Welcome to the tip calculator")
+bill = float(input("What was the total bill? $\n"))
+Tip = int(input("How much tip would you like to give? 10, 12,or 15\n"))
+people = int(input("How many people are there? \n"))
+pay_number = float((((Tip/bill)*100)/people) + (bill/people))
+pay_number = round(pay_number, 2)
+print(f"Each person should pay ${pay_number}")
 
 
 
