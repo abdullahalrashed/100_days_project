@@ -84,18 +84,24 @@ elif size == "M":
     price = 20
 elif size == "L":
     price = 25
+else:
+    print("please input with valid response")
 pepperoni = input("Do you want pepperoni on your pizza? Y or N: ")
 if pepperoni == "Y":
     if size == "S":
         price += 2
     elif size in "M , L": ## if size == "M" or size == "L":
         price += 3
+    else:
+        print("please input with valid response")
 else :
     price += 0
 extra_cheese = input("Do you want extra cheese? Y or N: ")
 if extra_cheese == "Y":
     price += 1
-else:
+elif extra_cheese == "N":
     price += 0
+else:
+    print("please input with valid response")
 print(f"your Final price is ${price}")
 
