@@ -22,3 +22,12 @@ states_of_america[1] = "Pengilvania"
 states_of_america.append("Angelaland")
 states_of_america.extend(["Angelaland2", "Jack Bauer Land"])
 print(states_of_america)
+
+number = random.randint(0, 4)
+friends = ["alice", "Bob", "Charlie", "David", "Emanuel"]
+name = friends[number]
+print(name)
+
+friends2 = ["alice", "Bob", "Charlie", "David", "Emanuel"]
+name2 = random.choice(friends2)
+print(name2)
