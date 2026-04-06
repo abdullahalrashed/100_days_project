@@ -31,3 +31,9 @@ print(name)
 friends2 = ["alice", "Bob", "Charlie", "David", "Emanuel"]
 name2 = random.choice(friends2)
 print(name2)
+
+fruits = ["Strawberries", "Nectarines", "Apples", "Grapes", "Peaches", "Cherries"]
+vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
+
+dirty_dozen = [fruits, vegetables]
+print(dirty_dozen)
