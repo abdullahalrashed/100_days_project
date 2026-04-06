@@ -154,6 +154,7 @@ if 0 <= user_choice <= 2:
     print(game_images[user_choice])
 computer_choice = random.randint(0, 2)
 print(f"Computer chose {computer_choice}")
+print(game_images[computer_choice])
 
 if user_choice >= 3 or user_choice < 0:
     print("You typed an invalid number. You lose!")
