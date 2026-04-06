@@ -14,3 +14,11 @@ if random_heads_or_tails == 0:
     print("Heads")
 else:
     print("Tails")
+
+states_of_america = ["Delaware", "Pennsylvania", "New Jersey", "Georgia"]
+
+states_of_america[1] = "Pengilvania"
+
+states_of_america.append("Angelaland")
+states_of_america.extend(["Angelaland2", "Jack Bauer Land"])
+print(states_of_america)
