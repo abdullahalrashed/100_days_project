@@ -38,10 +38,7 @@ vegetables = ["Spinach", "Kale", "Tomatoes", "Celery", "Potatoes"]
 dirty_dozen = [fruits, vegetables]
 print(dirty_dozen[0][0])
 
-rock
-paper
-scissors
-game
+# rock paper scissors game
 
 rock = (''' 
     _______
@@ -82,28 +79,40 @@ if computer_choice == user_choice:
     print(f"Computer chose {computer_choice} and you chose {user_choice}")
     print("It's a tie!")
 elif computer_choice == "rock" and user_choice == "paper":
-    print(f"Computer chose {computer_choice} and you chose {user_choice}")
-    print(rock + paper)
+    print(f"Computer chose {computer_choice}:")
+    print(rock)
+    print(f"and you chose {user_choice}")
+    print(paper)
     print("You win!")
 elif computer_choice == "rock" and user_choice == "scissors":
-    print(f"Computer chose {computer_choice} and you chose {user_choice}")
-    print(rock + scissors)
+    print(f"Computer chose {computer_choice}:")
+    print(rock)
+    print(f"and you chose {user_choice}")
+    print(scissors)
     print(" computer Wins")
 elif computer_choice == "paper" and user_choice == "rock":
-    print(f"Computer chose {computer_choice} and you chose {user_choice}")
-    print(paper + rock)
+    print(f"Computer chose {computer_choice}:")
+    print(paper)
+    print(f"and you chose {user_choice}")
+    print(paper)
     print("Computer Wins!")
 elif computer_choice == "paper" and user_choice == "scissors":
-    print(f"Computer chose {computer_choice} and you chose {user_choice}")
-    print(paper + scissors)
+    print(f"Computer chose {computer_choice}:")
+    print(paper)
+    print(f"and you chose {user_choice}")
+    print(scissors)
     print("You win!")
 elif computer_choice == "scissors" and user_choice == "paper":
-    print(f"Computer chose {computer_choice} and you chose {user_choice}")
-    print(scissors + paper)
+    print(f"Computer chose {computer_choice}:")
+    print(scissors)
+    print(f"and you chose {user_choice}")
+    print(paper)
     print("Computer Wins!")
 elif computer_choice == "scissors" and user_choice == "rock":
-    print(f"Computer chose {computer_choice} and you chose {user_choice}")
-    print(scissors + rock)
+    print(f"Computer chose {computer_choice}:")
+    print(scissors)
+    print(f"and you chose {user_choice}")
+    print(rock)
     print("You win!")
 else:
     print("You chose a wrong choice. Try again.")
@@ -138,10 +147,11 @@ scissors = ('''
       (____)
 ---.__(___)
 ''')
-
+game_images = [rock, paper, scissors]
 user_choice = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors\n"))
 # 0, 1, 2
-
+if 0 <= user_choice <= 2:
+    print(game_images[user_choice])
 computer_choice = random.randint(0, 2)
 print(f"Computer chose {computer_choice}")
 
