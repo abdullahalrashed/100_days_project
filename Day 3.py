@@ -156,7 +156,7 @@ if choice1 == "Left":
             print("You found the treasure. You Win!")
         elif choice3 == "blue":
             print("You enter a room of beasts. Game Over.")
-        else
+        else:
             print("You chose a door that doesn't exist. Game Over.|")
     else:
         print("You got attacked by an angry trout. Game Over.")
