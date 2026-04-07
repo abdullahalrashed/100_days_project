@@ -5,6 +5,7 @@ for fruit in fruits:
 print(fruits)
 
 student_scores = [150, 142, 185, 120, 171, 184, 149, 24, 59, 68, 199, 78, 65, 89]
+# finding how th efunction SUM works
 
 total_exam_score = sum(student_scores)
 
@@ -13,9 +14,13 @@ for score in student_scores:
     sum += score
 print(sum)
 
+# Finding how the function MAX works
+# type 1
 score2 = student_scores[0]
 
 for Max_value in student_scores:
     if Max_value > score2:
         score2 = Max_value
 print(score2)
+
+# type 2
